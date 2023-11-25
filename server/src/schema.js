@@ -53,11 +53,11 @@ const typeDefs = gql`
     videoUrl: String
   }
 
-  type Mutation{
-    incrementTrackViews(id: ID!)
+  type Mutation {
+    incrementTrackViews(id: ID!): incrementTrackViewsResponse!
   }
 
-  type incrementTrackViewsResponse{
+  type incrementTrackViewsResponse {
     "Represents the status of the mutation"
     code: Int!
     "Message for the UI"
