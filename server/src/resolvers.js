@@ -22,7 +22,7 @@ const resolvers = {
       // where we call the TrackAPI method
       async (_, { id }, { dataSources }) => {
         try {
-          const track = dataSources.trackAPI.incrementTrackViews(id);
+          const track = await dataSources.trackAPI.incrementTrackViews(id);
 
           return {
             code: 200,
