@@ -36,6 +36,7 @@ const resolvers = {
             code: err.extensions.response.status,
             success: false,
             message: err.extensions.response.body,
+            track: null,
           };
         }
       },
