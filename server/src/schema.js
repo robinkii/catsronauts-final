@@ -57,6 +57,7 @@ const typeDefs = gql`
     incrementTrackViews(id: ID!): incrementTrackViewsResponse!
   }
 
+  "response from incrementing a track's number of views"
   type incrementTrackViewsResponse {
     "Represents the status of the mutation"
     code: Int!
