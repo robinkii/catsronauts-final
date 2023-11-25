@@ -60,6 +60,8 @@ const typeDefs = gql`
   type incrementTrackViewsResponse {
     "Represents the status of the mutation"
     code: Int!
+    "indicates whether the mutation was successful"
+    success: Boolean!
     "Message for the UI"
     message: String!
     "Updated track only if there is a successful mutation"
